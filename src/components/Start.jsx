@@ -16,7 +16,7 @@ const Start = ({ setUsername }) => {
     inputRef.current.value && setUsername(inputRef.current.value);
   };
   return (
-    <div className="start w-full flex items-center justify-center">
+    <div className="start w-full flex flex-col items-center justify-center">
       <h2>WELCOME TO TODAY'S EDITION OF WWTOAM</h2>
       <div className="form w-[400px]">
         <input
