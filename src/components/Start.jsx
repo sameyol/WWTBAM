@@ -17,6 +17,7 @@ const Start = ({ setUsername }) => {
   };
   return (
     <div className="start w-full flex items-center justify-center">
+      <h2>WELCOME TO TODAY'S EDITION OF WWTOAM</h2>
       <div className="form w-[400px]">
         <input
           type="text"
