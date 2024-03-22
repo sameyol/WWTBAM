@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.active {
+  background-color: teal;
+}
+
+.answer:hover,
+.answer.active {
+  background: mediumblue;
+}
+
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    background: mediumblue;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  100% {
+    background: green;
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    background: mediumblue;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  100% {
+    background: crimson;
+  }
+}
+
+@media (max-width: 767px) {
+  .app {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
+      url("./assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
+  .main,
+  .start {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
+      url("./assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
